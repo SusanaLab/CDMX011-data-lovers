@@ -1,9 +1,6 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
+export const pokemonesType = () => {
   return 'example';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};

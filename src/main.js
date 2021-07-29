@@ -1,5 +1,4 @@
-//import { example } from './data.js';
-// import data from './data/lol/lol.js';
+
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
@@ -17,3 +16,16 @@ function generadordehtml(pokemoncito){
 }
 
 document.getElementById("root").innerHTML=htmlfinal
+
+
+ 
+  const pokemonResistant = pokemones.map(function (pokemones) {
+  
+    // return pokemones.type}
+    console.log(pokemones.type.includes("fire"));
+    
+
+    return pokemonResistant
+ 
+  })
+  
