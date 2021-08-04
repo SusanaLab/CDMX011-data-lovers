@@ -1,28 +1,41 @@
-header{
-  text-align: center;
-}
+.container {
+  width: 100%;
+  }
 
+  .searchBack{
+    position: absolute;
+    width: 1226px;
+    height: 80px;
+    left: 48px;
+    top: 396px;
+
+    background: #28063fc2;;
+  }
 
 body {
-background-color:#5e0f84;
+background-color:#3C0F5B;
 }
 
 .box {
-  position: relative;
+  width: 100%;
+  position:center;
   width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+  color: #868789;
+  top: 0px;
 
 }
 
 .box {
-  position: relative;
-  max-width: 300px;
-  height: 420px;
-  background: rgb(252, 221, 83);
+  position:relative;
+  max-width: 280px;
+  height: 450px;
+  background: linear-gradient(180deg, #363636 33%, #242525 40%);
+  border-radius: 10px;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -32,39 +45,8 @@ background-color:#5e0f84;
   transition: 0.5s ease-in-out;
   text-align: center;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-
-}
-.box .card:hover {
-height: 420px ;
-}
-.box .card .imageBox {
-  position: relative;
-  width: 260px;
-  height: 260px;
-  top: -10px;
-  left: 70px;
-  z-index: 1;
-}
-.box .card .imageBox img {
-  max-width: 100%;
-  border-radius: 4px;
-}
-.box .card .information{
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color:#111;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out
-}
-.box .card:hover .information {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
+  text-transform: uppercase;
+  font-size:small;
 }
 
 form{
@@ -86,3 +68,70 @@ button{
   left: 1000px;
 
 }
+
+h1{
+position: center;
+text-align:center;
+border-top:3px solid #868789;
+border-bottom: 3px solid #868789;
+width: fit-content;
+display: inline-block;
+}
+
+#imgPoke{
+  width: 150px;
+}
+
+button
+  {
+    position: absolute;
+    width:80px;
+    height: 20px;
+    left: 190px;
+    top: 2px;
+    background: #3a3939;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 0px;
+
+    color: #868789;
+}
+.filter{
+  position: absolute;
+    width:100px;
+    height: 20px;
+    left: 375px;
+    top: 10px;
+    background: #3a3939;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 0px;
+
+    color: white;
+
+}
+
+#orderSelect{
+  position: absolute;
+    width:100px;
+    height: 20px;
+    left: 500px;
+    top: 10px;
+    background: #3a3939;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 0px;
+
+    color: white;
+
+}
+
