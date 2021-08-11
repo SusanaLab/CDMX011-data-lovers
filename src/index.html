@@ -5,61 +5,59 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-  </header>
+    <header>
+    </header>
   <body>
 
-<main>
-    <div class="container">
-      <img  src="img/Pokemon.logo.png" width="100%" />
-      </div>
+    <main>
+
+      <img class="container" src="img/pokelogo.jpg" />
+ <div>
       <div class="searchBack">
+        <p id="order">Order by:</p>
+          <h1 id="showS" value="showS"> </h1>
 
-        <form>
-          <select  id="lista" name ="type" class="filter" Change="filter" </select>
-           <option value="0">Filter by type </option>
-           <option value ="fire"> fire </option>
-           <option value ="grass"> grass </option>
-           <option value = "poison"> poison </option>
-           <option value = "flying"> flying </option>
-           <option value ="water"> water </option>
-           <option value = "bug"> bug </option>
-           <option value = "normal"> normal </option>
-           <option value ="electric"> electric </option>
-           <option value = "ground"> ground </option>
-           <option value = "fighting"> fighting </option>
-           <option value ="psychic"> psychic </option>
-           <option value = "ice"> ice </option>
-           <option value = "rock"> rock </option>
-           <option value ="dragon"> dragon </option>
-           <option value = "fairy"> fairy </option>
-           <option value = "steel"> steel </option>
-           <option value ="dark"> dark </option>
+            <button id="A-Z" value="A-Z"> A-Z </button>
+            <button id="Z-A"value="Z-A"> Z-A </button>
+            
 
-            </select>
-        </form>
+              <form>
+                <select  id="lista" name ="type" class="filter" Change="filter" </select>
+                  <option value="0">Filter by type </option>
+                  <option value ="fire"> fire </option>
+                  <option value ="grass"> grass </option>
+                  <option value = "poison"> poison </option>
+                  <option value = "flying"> flying </option>
+                  <option value ="water"> water </option>
+                  <option value = "bug"> bug </option>
+                  <option value = "normal"> normal </option>
+                  <option value ="electric"> electric </option>
+                  <option value = "ground"> ground </option>
+                  <option value = "fighting"> fighting </option>
+                  <option value ="psychic"> psychic </option>
+                  <option value = "ice"> ice </option>
+                  <option value = "rock"> rock </option>
+                  <option value ="dragon"> dragon </option>
+                  <option value = "fairy"> fairy </option>
+                  <option value = "steel"> steel </option>
+                  <option value ="dark"> dark </option>
 
-        <nav class="menu">
+                </select>
+             </form>
 
-          <select name="order" id="order">
-            <option value="first">Order by:</option>
-            <option value="A-Z" id="ascending">A-Z</option>
-            <option value="Z-A" id="descending">Z-A</option>
-          </select>
-
-          <button>Inicio</button>
-      <div>
-        <form>
-          <input class="search" type="search" placeholder="Search..." name="search" />
-          <button type="submit">Search</button>
-        </form>
+      <div id="boxGen">
+        <h2 id="generation"> This section shows 40% Pokemon’s from Kanto and 60% from Johto </h2>
+        
+      </div>
+      
+      <input type="button" onclick="history.go(0)" id="back" value="back to home">
+    
+      
       </div>
 
-
-      </div>
-
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-</main>
+      <div id="root"></div>
+    
+       <script src="main.js" type="module"></script>
+    </main>
   </body>
 </html>
