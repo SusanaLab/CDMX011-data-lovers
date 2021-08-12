@@ -21,9 +21,6 @@ Yo como jugador/maestro pokemon, quiero conocer de qué región son los pokemone
 Prototipos
 Baja fidelidad
  ![image (6)](https://user-images.githubusercontent.com/86276089/129266607-fb4fc920-750c-4d1f-9ff8-1d484b2427bf.png)
- 
- ![download](https://user-images.githubusercontent.com/86276089/129266920-ae2b9a0b-7754-4328-9373-92ca9deca21f.jpg)
-
 
 Alta Fidelidad
 
