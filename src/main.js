@@ -1,6 +1,6 @@
 //aqui controlan todo el dom
 import data from './data/pokemon/pokemon.js';
-import { filterType, sortZA, sortA  } from './data.js';
+import { filterType, sortZA, sortA, statistics } from './data.js';
 
 
 
@@ -31,8 +31,8 @@ document.getElementById("root").innerHTML=htmlfinal
 const changeType = document.querySelector('.filter');
 
 changeType.addEventListener('change', (event) => {
-    const pokemonsFilter= filterType(pokemones,event.target.value)
-
+    const pokemonsFilter= filterType(pokemones,event.target.value); 
+    const percents =  statistics (pokemonsFilter);
     const htmlPokemons= pokemonsFilter.map((pokemoncito) =>
       `<div class="box">
         <img src="${pokemoncito.img}" id="imgPoke">
@@ -45,7 +45,9 @@ changeType.addEventListener('change', (event) => {
       </div>`
     )
 
-    document.getElementById("root").innerHTML=htmlPokemons
+    document.getElementById("root").innerHTML=htmlPokemons 
+document.getElementById("johto").innerHTML = `Johto: ${percents[0]} %`;
+document.getElementById("kanto").innerHTML =`Kanto: ${percents[1]} %`;
 });
 
 const changeOrder = document.getElementById("Z-A");
@@ -85,10 +87,3 @@ changeInverse.addEventListener('click', (event) => {
 });
 
 
-/*
-const show = filterGeneration(resultado);
-    document.getElementById("generation").innerHTML = ("In this selection of pokemon " + show + " are from kanto");
-    
-console.log(show);*/
-
-  

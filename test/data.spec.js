@@ -1,50 +1,35 @@
-import { filterType, sortA, sortZA } from '../src/data.js';
+import { filterType, sortA, sortZA, statistics } from '../src/data.js';
 
-const typesPokemon =[
-  { "name": "bulbasaur",
-    "type": [
-      "grass",
-      "poison"]
-  },
-
-   {"name": "ivysaur",
-    "type": [
-        "grass",
-        "poison"]
-    },
-
-    {"name": "venusaur",
-      "type": [
-        "grass",
-        "poison"]
-    }];
-
- 
 const names =  [
  
   {
   "num": "002",
   "name": "ivysaur",
+  "generation": {
+    "num": "generation i",
+    "name": "kanto",
+    "type": [ "grass", "poison"]
+  },
   
   },
-{
+  {
   "num": "003",
   "name": "venusaur",
-  
+  "generation": {
+    "num": "generation i",
+    "name": "kanto",
+    "type": ["grass", "poison"]
+  },
   },
   {"num": "001",
   "name": "bulbasaur",
-  
+   "generation": {
+    "num": "generation i",
+    "name": "kanto",
+    "type": [ "grass", "poison"]
+   },
   } ];
  
-describe('Regresa toda la data de pokemones', () => {
-  it('no es nulo', () => {
-     expect(pokemones).not.toBeNull();
-  });
-  it('Regresa toda la data de pokemones', () => {
-    expect(pokemones).toHaveLenght(251);
-  });
-});
 
 
 describe('returns type pokemon', () => {
@@ -54,7 +39,7 @@ describe('returns type pokemon', () => {
 
   it(' This function should return the types of pokemon', () => {
    
-    expect(filterType(typesPokemon, "grass")).toBe(typesPokemon); 
+    expect(filterType(names.types, [0])).toEqual(filterType(names)); 
   });
 });
 
@@ -83,6 +68,20 @@ describe('sortA', () => {
     expect(orden[0].name).toBe("venusaur");
     expect(orden[1].name).toBe("ivysaur");
     expect(orden[2].name).toBe("bulbasaur");
+  
+  });
+});
+
+describe('statistics', () => {
+  it('is a function', () => {
+    expect(typeof statistics).toBe('function');
+  });
+  it('it must return an array with 2 numerical values', () => {
+    const stats = statistics(names);
+    
+    expect(stats[0].name).toBe("100%");
+    expect(stats[1].name).toBe("0 %");
+   
   
   });
 });

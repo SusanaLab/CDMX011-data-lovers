@@ -3,19 +3,10 @@ export function filterType(pokemones,typePokemon){
   let resultado=pokemones.filter(function(pokemones){
     return pokemones.type == typePokemon;
   })
-  console.log(resultado);
+  
      return resultado
 }
 
-export function filterRe(pokemones,rePokemon){
-  let resultado=pokemones.filter(function(pokemones){
-    return pokemones.resistant == rePokemon;
-  })
-      return(resultado.lenght) 
-}
-
-
-//traemos el arreglo nombres
 //Ordenamos de forma Z-A
 export function sortZA (pokemones){
   const sortedPokemons = pokemones.sort(function (a, b) {
@@ -45,49 +36,27 @@ export function sortA (pokemones) {
   });
         return ordenaAscend 
 }
-//Esta es nuestra funcion de estadistica
-/*export function statistics (pokemones){
-    const arrayKanto =[];
-    const arrayJohto = [];
 
-    const region = pokemones.generation.name;
-    const letString= region.split()
+export function statistics (pokemones){
+  let arrayKanto =0;
+  let arrayJohto = 0;
 
-     for(let i=0; i <letString.lenght; i++){
-    
-      if (letString ===  "kanto") {
-          arrayKanto.push(letString)
-      }
-      else  {
-         arrayJohto.push(letString)
-      }
-    }
-       return arrayJohto
-  };
- 
-  const percent1 = arrayJohto.lenght*100
-  const percent2 = arrayKanto.lenght*100
-
-  document.getElementById ("kanto") = "En esta seccion se muestra " + percent1 + " de pokemones de Kanto ";
-  document.getElementById ("johto") = "En esta seccion se muestra " + percent2 + "de pokemones de Kanto  ";
-*/
-
-
-/*export function statistics (resultado){
-    
-    let arrayKanto =0;
-    let arrayJohto =0;
-
-     for( let i=0; i<resultado.lenght; i++){
-       if (resultado[i].generation.name == "kanto"){
-         arrayKanto = arrayKanto +1;
-       }
-      else if (resultado[i].generation.name== "johto"){
+   for(let i=0; i <pokemones.length; i++){
+    const region = pokemones [i].generation.name;
+      if (region ===  "kanto") {
+        arrayKanto = arrayKanto +1;
+      } else  {
         arrayJohto = arrayJohto +1;
-    }
-    return arrayKanto.length
-   }
+      }
   }
-  alert(arrayKanto);*/
 
-  
+
+ const percent1 = (arrayJohto/pokemones.length) *100
+ const percent2 = (arrayKanto/pokemones.length) *100
+
+ return [Math.round(percent1), Math.round(percent2)]
+}
+
+
+
+
