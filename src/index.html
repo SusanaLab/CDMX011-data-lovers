@@ -6,20 +6,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
     <header>
-    </header>
-  <body>
-
-    <main>
-
-      <img class="container" src="img/pokelogo.jpg" />
- <div>
-      <div class="searchBack">
+      <img class="logo" src="img/pokelogo.jpg" />
+      <nav class="searchBack">
+        <div id="boxNav"></div>
         <p id="order">Order by:</p>
           <h1 id="showS" value="showS"> </h1>
 
             <button id="A-Z" value="A-Z"> A-Z </button>
             <button id="Z-A"value="Z-A"> Z-A </button>
-            
 
               <form>
                 <select  id="lista" name ="type" class="filter" Change="filter" </select>
@@ -45,19 +39,32 @@
                 </select>
              </form>
 
-      <div id="boxGen">
-        <h2 id="kanto">  </h2>
-        <h2 id="johto">  </h2>
-      </div>
-      
-      <input type="button" onclick="history.go(0)" id="back" value="back to home">
-    
-      
-      </div>
+            <div id="boxGen">
+              <h2 id="kanto"> </h2>
+              <h2 id="johto"> </h2>
+            </div>
 
+          <input type="button" onclick="history.go(0)" id="back" value="back to home">
+
+      </nav>
+    </header>
+  <body>
+
+    <main>
       <div id="root"></div>
-    
-       <script src="main.js" type="module"></script>
     </main>
   </body>
+
+  <footer>
+    <div id="boxFoo">
+      <p id="copyR">
+       <br> ©️ All Rights Reserved 2021. <br>
+        Laboratoria by Claudia Piñas / Susana García <br>
+        All Rights Reserved. <br>
+       </p>
+
+    </div>
+  </footer>
+  <script src="main.js" type="module"></script>
 </html>
+

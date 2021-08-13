@@ -1,7 +1,7 @@
 import { filterType, sortA, sortZA, statistics } from '../src/data.js';
-
+//import data from '../src/data.js';//
+//const pokem = data.pokemon;//
 const names =  [
- 
   {
   "num": "002",
   "name": "ivysaur",
@@ -28,23 +28,23 @@ const names =  [
     "name": "kanto",
     "type": [ "grass", "poison"]
    },
-  } ];
- 
+  }, 
 
+];
+ 
 
 describe('returns type pokemon', () => {
   it('is a function', () => {
     expect(typeof filterType).toBe('function');
   });
-
   it(' This function should return the types of pokemon', () => {
-   
-    expect(filterType(names.types, [0])).toEqual(filterType(names)); 
+    expect(filterType(names,"rock")).toHaveLength(0);
   });
+
 });
 
 
-describe('sortA', () => {
+describe('sortA-Z', () => {
   it('is a function', () => {
     expect(typeof sortA).toBe('function');
   });
@@ -56,9 +56,10 @@ describe('sortA', () => {
       expect(orden[2].name).toBe("venusaur");
   
   });
+
 });
 
-describe('sortA', () => {
+describe('sortZ-A', () => {
   it('is a function', () => {
     expect(typeof sortZA).toBe('function');
   });
@@ -79,9 +80,9 @@ describe('statistics', () => {
   it('it must return an array with 2 numerical values', () => {
     const stats = statistics(names);
     
-    expect(stats[0].name).toBe("100%");
-    expect(stats[1].name).toBe("0 %");
-   
+    expect(stats[0]).toBe( 0 );
+    expect(stats[1]).toBe( 100 );
+    
   
   });
-});
+})
