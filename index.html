@@ -5,15 +5,18 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <body>
     <header>
       <img class="logo" src="img/pokelogo.jpg" />
       <nav class="searchBack">
-        <div id="boxNav"></div>
+        <div id="boxNav">
         <p id="order">Order by:</p>
           <h1 id="showS" value="showS"> </h1>
 
             <button id="A-Z" value="A-Z"> A-Z </button>
             <button id="Z-A"value="Z-A"> Z-A </button>
+        </div>
 
               <form>
                 <select  id="lista" name ="type" class="filter" Change="filter" </select>
@@ -48,22 +51,23 @@
 
       </nav>
     </header>
-  <body>
 
     <main>
       <div id="root"></div>
     </main>
+    <footer>
+      <div id="boxFoo">
+        <p id="copyR">
+         <br> ©️ All Rights Reserved 2021. <br>
+          Laboratoria by Claudia Piñas / Susana García <br>
+          All Rights Reserved. <br>
+          <img id="pikachu" src="img/pikachu.png"/>
+         </p>
+
+      </div>
+    </footer>
+    <script src="main.js" type="module"></script>
   </body>
 
-  <footer>
-    <div id="boxFoo">
-      <p id="copyR">
-       <br> ©️ All Rights Reserved 2021. <br>
-        Laboratoria by Claudia Piñas / Susana García <br>
-        All Rights Reserved. <br>
-       </p>
 
-    </div>
-  </footer>
-  <script src="main.js" type="module"></script>
 </html>
