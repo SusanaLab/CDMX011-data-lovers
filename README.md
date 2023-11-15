@@ -1,37 +1,34 @@
-# Data Lovers
+Data Lovers - Who’s That Pokemon?
+Resumen del Proyecto
+Who’s that Pokemon? es una página web inspirada en el juego Pokémon Go, diseñada para jugadores y maestros Pokémon. La plataforma proporciona información detallada sobre los Pokémon, ayudando a los usuarios a tomar decisiones estratégicas en sus batallas.
 
-Resumen de Proyecto: 
-
-Who’s that Pokemon? Es una página web basada en el juego Pokemon Go, donde los usuarios podrán visualizar información relevante sobre los pokemones.  
-Para la definición de nuestra página se llevó a cabo una pequeña investigación para definir las necesidades de nuestros usuarios:
-
+Investigación de Usuarios
 Usuario
-Jugador/Maestro Pokemon
+Jugador/Maestro Pokémon
 
 Objetivo
-Obtener más información de los pokemones para elegir el más adecuado para la batalla.
+Obtener información detallada sobre los Pokémon para elegir el más adecuado para la batalla.
 
-Historias de Usuario.
+Historias de Usuario
+Visualización Rápida:
 
-Yo como jugador/maestro pokemon, quiero ver la información con la imagen de los pokemones en la página principal, para poder identificar un pokemon si no se su nombre.
-Yo como jugador/maestro pokemon, quiero poder filtrar a los pokemones por tipo para seleccionar el pokemon adecuado para mi batalla.
-Yo como jugador/maestro pokemon, quiero poder ordenar los pokemones en orden alfabético de A-Z y de Z-A para poder encontrar más rápido el pokemon que busco.
-Yo como jugador/maestro pokemon, quiero conocer de qué región son los pokemones para saber que porcentaje son de Kanto y Johto.
+Como jugador/maestro Pokémon, quiero ver la información con la imagen de los Pokémon en la página principal para identificar un Pokémon incluso si no sé su nombre.
+Filtrado por Tipo:
 
-Prototipos
-Baja fidelidad
+Como jugador/maestro Pokémon, quiero poder filtrar a los Pokémon por tipo para seleccionar el Pokémon adecuado para mi batalla.
+Orden Alfabético:
 
- ![image (6)](https://user-images.githubusercontent.com/86276089/129266607-fb4fc920-750c-4d1f-9ff8-1d484b2427bf.png)
+Como jugador/maestro Pokémon, quiero poder ordenar los Pokémon en orden alfabético de A-Z y de Z-A para encontrar más rápidamente el Pokémon que estoy buscando.
+Región Pokémon:
 
-Alta Fidelidad
-
-
- ![image (5)](https://user-images.githubusercontent.com/86276089/129266238-92563c6d-7b01-4608-b82e-d2e39e838103.png)
- 
- Final 
- 
- ![image (7)](https://user-images.githubusercontent.com/86276089/129267388-b4b5f5b9-8f16-4d59-af54-16ef61971116.png)
-
-
+Como jugador/maestro Pokémon, quiero conocer la región de origen de los Pokémon para entender el porcentaje de Pokémon provenientes de Kanto y Johto.
+Tecnologías Utilizadas
+HTML
+CSS
+JavaScript
+Jest
+Instrucciones para Ejecutar el Proyecto
+Clona este repositorio.
+¡Explora el mundo Pokémon y elige a tus compañeros de batalla sabiamente! 🚀👾
  
 
